@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		185A78C0289CAB0800D9D46C /* FirebaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A78BF289CAB0800D9D46C /* FirebaseConfig.swift */; };
+		1865AC19289869D7000A17B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865AC18289869D7000A17B2 /* AppDelegate.swift */; };
+		1865AC1B289869D7000A17B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865AC1A289869D7000A17B2 /* SceneDelegate.swift */; };
+		1865AC20289869D7000A17B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1865AC1E289869D7000A17B2 /* Main.storyboard */; };
+		1865AC22289869D8000A17B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1865AC21289869D8000A17B2 /* Assets.xcassets */; };
+		1865AC25289869D8000A17B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1865AC23289869D8000A17B2 /* LaunchScreen.storyboard */; };
+		188F60D528987FFA004EFA20 /* ToysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F60D428987FFA004EFA20 /* ToysTableViewController.swift */; };
+		188F60D7289880C7004EFA20 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F60D6289880C7004EFA20 /* FormViewController.swift */; };
+		188F60D928988508004EFA20 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 188F60D828988508004EFA20 /* GoogleService-Info.plist */; };
+		188F60DB28988AF8004EFA20 /* Toy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F60DA28988AF8004EFA20 /* Toy.swift */; };
+		188F60DD28988C3E004EFA20 /* ConservationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188F60DC28988C3E004EFA20 /* ConservationState.swift */; };
+		C654B892B11320E303336018 /* Pods_brinquedos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9614EC98645E440041268693 /* Pods_brinquedos.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0DE06F349E3D605ABA8BEC20 /* Pods-brinquedos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brinquedos.debug.xcconfig"; path = "Target Support Files/Pods-brinquedos/Pods-brinquedos.debug.xcconfig"; sourceTree = "<group>"; };
+		185A78BF289CAB0800D9D46C /* FirebaseConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseConfig.swift; sourceTree = "<group>"; };
+		1865AC15289869D7000A17B2 /* brinquedos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brinquedos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1865AC18289869D7000A17B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1865AC1A289869D7000A17B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1865AC1F289869D7000A17B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1865AC21289869D8000A17B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1865AC24289869D8000A17B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1865AC26289869D8000A17B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		188F60D428987FFA004EFA20 /* ToysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToysTableViewController.swift; sourceTree = "<group>"; };
+		188F60D6289880C7004EFA20 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		188F60D828988508004EFA20 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		188F60DA28988AF8004EFA20 /* Toy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toy.swift; sourceTree = "<group>"; };
+		188F60DC28988C3E004EFA20 /* ConservationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConservationState.swift; sourceTree = "<group>"; };
+		85278C9873E208683DC80005 /* Pods-brinquedos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brinquedos.release.xcconfig"; path = "Target Support Files/Pods-brinquedos/Pods-brinquedos.release.xcconfig"; sourceTree = "<group>"; };
+		9614EC98645E440041268693 /* Pods_brinquedos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brinquedos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1865AC12289869D7000A17B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C654B892B11320E303336018 /* Pods_brinquedos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1865AC0C289869D7000A17B2 = {
+			isa = PBXGroup;
+			children = (
+				1865AC17289869D7000A17B2 /* brinquedos */,
+				1865AC16289869D7000A17B2 /* Products */,
+				6FA0874DDAF6D7D01389B367 /* Pods */,
+				7A0C66E641EC1C047567E330 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1865AC16289869D7000A17B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1865AC15289869D7000A17B2 /* brinquedos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1865AC17289869D7000A17B2 /* brinquedos */ = {
+			isa = PBXGroup;
+			children = (
+				188F60D828988508004EFA20 /* GoogleService-Info.plist */,
+				1865AC18289869D7000A17B2 /* AppDelegate.swift */,
+				1865AC1A289869D7000A17B2 /* SceneDelegate.swift */,
+				1865AC1E289869D7000A17B2 /* Main.storyboard */,
+				1865AC21289869D8000A17B2 /* Assets.xcassets */,
+				1865AC23289869D8000A17B2 /* LaunchScreen.storyboard */,
+				1865AC26289869D8000A17B2 /* Info.plist */,
+				188F60D428987FFA004EFA20 /* ToysTableViewController.swift */,
+				188F60D6289880C7004EFA20 /* FormViewController.swift */,
+				188F60DA28988AF8004EFA20 /* Toy.swift */,
+				188F60DC28988C3E004EFA20 /* ConservationState.swift */,
+				185A78BF289CAB0800D9D46C /* FirebaseConfig.swift */,
+			);
+			path = brinquedos;
+			sourceTree = "<group>";
+		};
+		6FA0874DDAF6D7D01389B367 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DE06F349E3D605ABA8BEC20 /* Pods-brinquedos.debug.xcconfig */,
+				85278C9873E208683DC80005 /* Pods-brinquedos.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7A0C66E641EC1C047567E330 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9614EC98645E440041268693 /* Pods_brinquedos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1865AC14289869D7000A17B2 /* brinquedos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1865AC29289869D8000A17B2 /* Build configuration list for PBXNativeTarget "brinquedos" */;
+			buildPhases = (
+				3AF9878B8B494E97F57C0150 /* [CP] Check Pods Manifest.lock */,
+				1865AC11289869D7000A17B2 /* Sources */,
+				1865AC12289869D7000A17B2 /* Frameworks */,
+				1865AC13289869D7000A17B2 /* Resources */,
+				F3FC04B96EB3D5F51536A7B4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = brinquedos;
+			productName = brinquedos;
+			productReference = 1865AC15289869D7000A17B2 /* brinquedos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1865AC0D289869D7000A17B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					1865AC14289869D7000A17B2 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 1865AC10289869D7000A17B2 /* Build configuration list for PBXProject "brinquedos" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1865AC0C289869D7000A17B2;
+			productRefGroup = 1865AC16289869D7000A17B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1865AC14289869D7000A17B2 /* brinquedos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1865AC13289869D7000A17B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1865AC25289869D8000A17B2 /* LaunchScreen.storyboard in Resources */,
+				188F60D928988508004EFA20 /* GoogleService-Info.plist in Resources */,
+				1865AC22289869D8000A17B2 /* Assets.xcassets in Resources */,
+				1865AC20289869D7000A17B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AF9878B8B494E97F57C0150 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-brinquedos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3FC04B96EB3D5F51536A7B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-brinquedos/Pods-brinquedos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-brinquedos/Pods-brinquedos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-brinquedos/Pods-brinquedos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1865AC11289869D7000A17B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188F60DB28988AF8004EFA20 /* Toy.swift in Sources */,
+				185A78C0289CAB0800D9D46C /* FirebaseConfig.swift in Sources */,
+				1865AC19289869D7000A17B2 /* AppDelegate.swift in Sources */,
+				1865AC1B289869D7000A17B2 /* SceneDelegate.swift in Sources */,
+				188F60D528987FFA004EFA20 /* ToysTableViewController.swift in Sources */,
+				188F60DD28988C3E004EFA20 /* ConservationState.swift in Sources */,
+				188F60D7289880C7004EFA20 /* FormViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1865AC1E289869D7000A17B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1865AC1F289869D7000A17B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1865AC23289869D8000A17B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1865AC24289869D8000A17B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1865AC27289869D8000A17B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1865AC28289869D8000A17B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1865AC2A289869D8000A17B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DE06F349E3D605ABA8BEC20 /* Pods-brinquedos.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = brinquedos/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.jcastro.unyleya.brinquedos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1865AC2B289869D8000A17B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85278C9873E208683DC80005 /* Pods-brinquedos.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = brinquedos/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.jcastro.unyleya.brinquedos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1865AC10289869D7000A17B2 /* Build configuration list for PBXProject "brinquedos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1865AC27289869D8000A17B2 /* Debug */,
+				1865AC28289869D8000A17B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1865AC29289869D8000A17B2 /* Build configuration list for PBXNativeTarget "brinquedos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1865AC2A289869D8000A17B2 /* Debug */,
+				1865AC2B289869D8000A17B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1865AC0D289869D7000A17B2 /* Project object */;
+}

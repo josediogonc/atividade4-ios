@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jVO-CU-P0L">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lista de Problemas-->
+        <scene sceneID="ZA3-u1-HaX">
+            <objects>
+                <tableViewController title="Lista de Problemas" id="trz-sg-cKT" customClass="ToysTableViewController" customModule="brinquedos" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="GN7-Qb-s3x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="pwq-jU-tue" detailTextLabel="CiJ-hx-iYH" style="IBUITableViewCellStyleValue1" id="gKc-NR-0Rv">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gKc-NR-0Rv" id="gId-5z-cK8">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pwq-jU-tue">
+                                            <rect key="frame" x="20" y="15" width="25" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CiJ-hx-iYH">
+                                            <rect key="frame" x="361" y="15" width="33" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="bP8-Bd-lTh" kind="show" id="KkA-94-JBf"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="trz-sg-cKT" id="h3J-Wh-x4d"/>
+                            <outlet property="delegate" destination="trz-sg-cKT" id="OQ5-oI-mWO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Lista de Brinquedos" id="n03-Jq-eNh" customClass="Issues">
+                        <barButtonItem key="backBarButtonItem" title=" " id="eev-cQ-zr6"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="VaJ-jN-3em">
+                            <connections>
+                                <segue destination="bP8-Bd-lTh" kind="show" id="PqD-EW-ZlB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4h3-nl-gbW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-159" y="-30"/>
+        </scene>
+        <!--Cadastro-->
+        <scene sceneID="grt-1h-1PR">
+            <objects>
+                <viewController id="bP8-Bd-lTh" customClass="FormViewController" customModule="brinquedos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="olH-vq-ssF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vmM-IH-nPP">
+                                <rect key="frame" x="16" y="164" width="382" height="266.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do brinquedo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6WC-vh-zuF">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do doador" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R4g-Hf-4ok">
+                                        <rect key="frame" x="0.0" y="42" width="382" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Endereço" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xIb-iC-Ri9">
+                                        <rect key="frame" x="0.0" y="84" width="382" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eb9-uz-884">
+                                        <rect key="frame" x="0.0" y="126" width="382" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado de conservação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsb-bm-tGj">
+                                        <rect key="frame" x="0.0" y="168" width="382" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MjQ-Xy-p3g">
+                                        <rect key="frame" x="0.0" y="196.5" width="382" height="32"/>
+                                        <segments>
+                                            <segment title="Novo"/>
+                                            <segment title="Usado"/>
+                                            <segment title="Precisa reparo"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvg-9S-3Pf">
+                                        <rect key="frame" x="0.0" y="235.5" width="382" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Cadastrar"/>
+                                        <connections>
+                                            <action selector="save:" destination="bP8-Bd-lTh" eventType="touchUpInside" id="J1t-0b-Gdv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="6WC-vh-zuF" secondAttribute="trailing" id="0Wn-px-iJG"/>
+                                    <constraint firstAttribute="bottom" secondItem="xvg-9S-3Pf" secondAttribute="bottom" id="0xs-qi-b6m"/>
+                                    <constraint firstItem="6WC-vh-zuF" firstAttribute="leading" secondItem="vmM-IH-nPP" secondAttribute="leading" id="an0-og-63f"/>
+                                    <constraint firstItem="6WC-vh-zuF" firstAttribute="top" secondItem="vmM-IH-nPP" secondAttribute="top" id="mOT-Tp-SGY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Laz-5n-hPB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vmM-IH-nPP" firstAttribute="top" secondItem="Laz-5n-hPB" secondAttribute="top" constant="24" id="aea-ta-HW6"/>
+                            <constraint firstItem="Laz-5n-hPB" firstAttribute="trailing" secondItem="vmM-IH-nPP" secondAttribute="trailing" constant="16" id="mwm-ry-pY9"/>
+                            <constraint firstItem="vmM-IH-nPP" firstAttribute="leading" secondItem="Laz-5n-hPB" secondAttribute="leading" constant="16" id="wrP-dL-K8Y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cadastro" id="6nK-Sy-Etd">
+                        <barButtonItem key="backBarButtonItem" title=" " id="IMa-tQ-gwk"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="conservacao" destination="MjQ-Xy-p3g" id="vgL-HI-lKb"/>
+                        <outlet property="endereco" destination="xIb-iC-Ri9" id="Lyf-7t-GeD"/>
+                        <outlet property="mainButton" destination="xvg-9S-3Pf" id="vbI-h9-SvT"/>
+                        <outlet property="nomeBrinquedo" destination="6WC-vh-zuF" id="h2S-dB-8vI"/>
+                        <outlet property="nomeDoador" destination="R4g-Hf-4ok" id="s7p-80-8sC"/>
+                        <outlet property="telefone" destination="eb9-uz-884" id="P2L-Ff-5rD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yyF-dP-eE3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720" y="-30"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KnC-wg-bWb">
+            <objects>
+                <navigationController id="jVO-CU-P0L" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="1Eq-vn-B86">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="trz-sg-cKT" kind="relationship" relationship="rootViewController" id="Mjb-5L-8dQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jvU-Ba-ORY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1049" y="-30"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="PqD-EW-ZlB"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
